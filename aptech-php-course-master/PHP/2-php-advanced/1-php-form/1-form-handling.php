@@ -53,19 +53,19 @@ echo "<br><br>DO EXERCISE INSIDE COMMENT CODE BELOW THIS LINE<hr>";
     <title>Document</title>
 </head>
 <body>
-    <form action="<?php echo $_SERVER["PHP_SELF"]?>" method="post">
-username: <input type="text" name="name">
- </br>
- pass: <input type="text" name="password">
- </br>
-<button type="submit">xacnhan</button>
-</form>
+    <form action="<?php echo $_SERVER['PHP_RELF']?>" method="post">
+    name: <input type="text" name="name">
+    </br>
+    password: <input type="text" name="pass">
+    </br>
+    <button type="submit">xacnhan</button>
+    </form>
 </body>
 </html>
 <?php
-if ($_SERVER["REQUEST_METHOD"] =="POST"){   
-    $name =$_POST["name"];
-    $password =$_POST["password"];
-    echo "cai name la $name va cai password la $password";
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+    $name=$_POST("name");
+    $pass=$_POST("pass");
+    echo "in ra cho minh cai $name va cai $pass";
 }
 ?>
